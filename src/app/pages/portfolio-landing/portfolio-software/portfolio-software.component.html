@@ -1,0 +1,60 @@
+<div id="software" class="software-section pt-100 pb-70">
+    <div class="container">
+        <div class="section-title">
+            <h2>Software I Use For Work</h2>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="software-img">
+                    <img src="img/personal-portfolio/framework.png" alt="software image">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="software-text">
+                    <ul class="nav-tabset">
+                        <li class="nav-tab" [ngClass]="{'active': currentTab === 'tab1'}">
+                            <span (click)="switchTab($event, 'tab1')">
+                                Mobile Development
+                            </span>
+                        </li>
+                        <li class="nav-tab" [ngClass]="{'active': currentTab === 'tab2'}">
+                            <span (click)="switchTab($event, 'tab2')">
+                                Web Development
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="tabs-container">
+                        <div class="pane" id="tab1" *ngIf="currentTab === 'tab1'">
+                            <h2>Flutter</h2>
+                            <p>Mobile app development using Flutter with 4 years of experience, a modern framework from Google that allows the creation of Android and iOS apps with a single code base.</p>
+                            <h3>Also Worked With</h3>
+                            <ul>
+                                <li><img src="img/personal-portfolio/flutter.png" alt="flutter icon"></li>
+                                <li><img src="img/personal-portfolio/Dart-logo.png" alt="dart icon"></li>
+                                <li><img src="img/personal-portfolio/firebase.png" alt="firebase icon"></li>
+                            </ul>
+                            <a routerLink="." class="software-link">Hire Now</a>
+                        </div>
+                        <div class="pane" id="tab2" *ngIf="currentTab === 'tab2'">
+                            <h2>Angular</h2>
+                            <p>Web Developer using Angular with 6 years of experience focused on developing modern web applications using Angular, Google's powerful front-end framework. With experience in building interactive UIs, high performance, and scalable code structures.</p>
+                            <h3>Also Worked With</h3>
+                            <ul>
+                                <li><img src="img/personal-portfolio/angular.png" alt="angular icon"></li>
+                                <li><img src="img/personal-portfolio/tailwind.png" alt="tailwinds icon"></li>
+                                <li><img src="img/personal-portfolio/Typescript.png" alt="Typescript icon"></li>
+                            </ul>
+                            <a href="https://wa.me/6281286475051" target="_blank" class="software-link">Hire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="software-shape">
+        <img src="img/shape/home-shape.png" alt="shape">
+        <img src="img/shape/home-shape-four.png" alt="shape">
+        <img src="img/shape/home-shape-two.png" alt="shape">
+        <img src="img/shape/subscribe-shape-three.png" alt="shape">
+    </div>
+</div>
